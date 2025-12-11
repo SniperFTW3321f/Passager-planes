@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aircraft Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" style="color: var(--accent-dark); text-decoration:none; font-weight:bold;">◀ Back to Fleet</a>
+        <div class="logo">DETAILS</div>
+    </nav>
+
+    <div class="details-container">
+        <div class="detail-header">
+            <h1 id="d-name">Loading...</h1>
+            <p id="d-type" style="opacity:0.8;">Type</p>
+        </div>
+        
+        <img id="d-img" src="" style="width:100%; height:400px; object-fit:cover;">
+
+        <div class="detail-content">
+            <h3>About this Aircraft</h3>
+            <p id="d-desc">Description goes here.</p>
+
+            <div class="specs-box">
+                <div class="spec-item">
+                    <strong>Passengers</strong>
+                    <span id="d-pax">-</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Range</strong>
+                    <span id="d-range">-</span>
+                </div>
+                <div class="spec-item">
+                    <strong>Speed</strong>
+                    <span id="d-speed">-</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="details.js"></script>
+</body>
+</html>

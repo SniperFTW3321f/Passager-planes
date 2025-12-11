@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passager Planes</title>
+    <title>SkyHigh | Commercial Aviation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <nav class="navbar">
+        <div class="logo">✈ SKYFLEET COMMERCIAL</div>
+        <div>
+            <a href="../index.html" style="color: #00509e; text-decoration: none; font-weight:bold;">Home</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Global Passenger Fleet</h1>
+        <p>Connecting the world, one flight at a time.</p>
+    </header>
+
+    <main>
+        <section class="control-panel">
+            <div class="filter-box">
+                <label>MANUFACTURER</label>
+                <select id="man-filter">
+                    <option value="all">All Makers</option>
+                    <option value="Boeing">Boeing</option>
+                    <option value="Airbus">Airbus</option>
+                    <option value="Embraer">Embraer</option>
+                    <option value="Bombardier">Bombardier</option>
+                </select>
+            </div>
+            
+            <div class="filter-box">
+                <label>AIRCRAFT TYPE</label>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                    <option value="Wide-body">Wide-body</option>
+                    <option value="Narrow-body">Narrow-body</option>
+                    <option value="Regional">Regional</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="plane-grid" class="grid-container">
+            </section>
+    </main>
+
+    <footer>
+        <p>Commercial Aviation Division &copy; 2024</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
